@@ -1,0 +1,6 @@
+Version 0.8.1
+--------------
+- Added htenones
+- Added power(x, 2) (x.^2) for htensor
+- Changed name of htenrand to htenrandn
+- Fixed some bugs in examples

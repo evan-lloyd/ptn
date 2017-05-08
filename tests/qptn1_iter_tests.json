@@ -1,0 +1,63 @@
+{
+	"QPTN": {
+		"arity": {
+			"_ArrayType_": "double",
+			"_ArraySize_": [1,2],
+			"_ArrayData_": [2,2]
+		},
+		"size": [
+			{
+				"_ArrayType_": "double",
+				"_ArraySize_": [1,2],
+				"_ArrayData_": [2,2]
+			},
+			{
+				"_ArrayType_": "double",
+				"_ArraySize_": [1,2],
+				"_ArrayData_": [2,2]
+			}
+		],
+		"edge": {
+			"_ArrayType_": "double",
+			"_ArraySize_": [1,4],
+			"_ArrayData_": [1,1,2,1]
+		},
+		"stoch": [
+			{
+				"_ArrayType_": "double",
+				"_ArraySize_": [1,2],
+				"_ArrayData_": [1,2]
+			},
+			{
+				"_ArrayType_": "double",
+				"_ArraySize_": [1,1],
+				"_ArrayData_": [2]
+			}
+		]
+	},
+	"nTrials": {
+		"_ArrayType_": "double",
+		"_ArraySize_": [1,1],
+		"_ArrayData_": [10]
+	},
+	"nSamples": {
+		"_ArrayType_": "double",
+		"_ArraySize_": [1,3],
+		"_ArrayData_": [1e3, 1e6, 1e9]
+	},
+	"maxIter": {
+		"_ArrayType_": "double",
+		"_ArraySize_": [1,1],
+		"_ArrayData_": [100]
+	},
+	"res": {
+		"_ArrayType_": "double",
+		"_ArraySize_": [1,3],
+		"_ArrayData_": [2,3,4]
+	},
+	"target": [
+		"randIndex",
+		"randSimplex"
+	],
+    "testAlternatingIterationKL": true
+}

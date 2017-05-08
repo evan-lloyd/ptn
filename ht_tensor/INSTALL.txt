@@ -1,0 +1,25 @@
+INSTALLATION of the Hierarchical Tucker Toolbox
+-----------------------------------------------
+
+Download the .zip or .tar.gz file from
+
+http://www.sam.math.ethz.ch/NLAgroup/htucker_toolbox.html,
+
+and extract it in a directory of your choice. Open MATLAB and enter
+
+> path(path, '$path_to_directory/htucker_toolbox_v0.8.1');
+
+replacing $path_to_directory with the static path to the directory
+containing htucker_toolbox_v0.8.1. This puts the directory
+htucker_toolbox_v0.8.1 on the MATLAB search path for this session.
+
+Alternatively, you can navigate to the directory htucker_toolbox_v0.8.1
+in MATLAB, and enter
+
+> path(path, pwd);
+
+To make your change of the MATLAB path permanent, enter
+
+> savepath
+
+which saves the current path for future sessions.

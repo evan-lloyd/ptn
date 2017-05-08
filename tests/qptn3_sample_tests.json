@@ -1,0 +1,164 @@
+{
+	"QPTN": {
+		"arity": {
+			"_ArrayType_": "double",
+			"_ArraySize_": [1,8],
+			"_ArrayData_": [1,4,2,2,3,3,3,2]
+		},
+		"size": [
+			{
+				"_ArrayType_": "double",
+				"_ArraySize_": [1,1],
+				"_ArrayData_": [3]
+			},
+			{
+				"_ArrayType_": "double",
+				"_ArraySize_": [1,4],
+				"_ArrayData_": [3,3,3,3]
+			},
+			{
+				"_ArrayType_": "double",
+				"_ArraySize_": [1,2],
+				"_ArrayData_": [4,3]
+			},
+			{
+				"_ArrayType_": "double",
+				"_ArraySize_": [1,2],
+				"_ArrayData_": [2,3]
+			},
+			{
+				"_ArrayType_": "double",
+				"_ArraySize_": [1,3],
+				"_ArrayData_": [4,4,4]
+			},
+			{
+				"_ArrayType_": "double",
+				"_ArraySize_": [1,3],
+				"_ArrayData_": [2,2,2]
+			},
+			{
+				"_ArrayType_": "double",
+				"_ArraySize_": [1,3],
+				"_ArrayData_": [5,4,2]
+			},
+			{
+				"_ArrayType_": "double",
+				"_ArraySize_": [1,2],
+				"_ArrayData_": [5,5]
+			}
+		],
+		"stoch": [
+			{
+				"_ArrayType_": "double",
+				"_ArraySize_": [1,1],
+				"_ArrayData_": [1]
+			},
+			{
+				"_ArrayType_": "double",
+				"_ArraySize_": [0,0],
+				"_ArrayData_": null
+			},
+			{
+				"_ArrayType_": "double",
+				"_ArraySize_": [1,1],
+				"_ArrayData_": [1]
+			},
+			{
+				"_ArrayType_": "double",
+				"_ArraySize_": [1,1],
+				"_ArrayData_": [1]
+			},
+			{
+				"_ArrayType_": "double",
+				"_ArraySize_": [0,0],
+				"_ArrayData_": null
+			},
+			{
+				"_ArrayType_": "double",
+				"_ArraySize_": [0,0],
+				"_ArrayData_": null
+			},
+			{
+				"_ArrayType_": "double",
+				"_ArraySize_": [1,1],
+				"_ArrayData_": [1]
+			},
+			{
+				"_ArrayType_": "double",
+				"_ArraySize_": [0,0],
+				"_ArrayData_": null
+			}
+		],
+		"fixedParameters": [
+			{
+				"_ArrayType_": "double",
+				"_ArraySize_": [0,0],
+				"_ArrayData_": null
+			},
+			{
+				"_ArrayType_": "double",
+				"_ArraySize_": [3,3,3,3],
+				"_ArrayData_": [1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1]
+			},
+			{
+				"_ArrayType_": "double",
+				"_ArraySize_": [0,0],
+				"_ArrayData_": null
+			},
+			{
+				"_ArrayType_": "double",
+				"_ArraySize_": [0,0],
+				"_ArrayData_": null
+			},
+			{
+				"_ArrayType_": "double",
+				"_ArraySize_": [4,4,4],
+				"_ArrayData_": [1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1]
+			},
+			{
+				"_ArrayType_": "double",
+				"_ArraySize_": [2,2,2],
+				"_ArrayData_": [1,0,0,0,0,0,0,1]
+			},
+			{
+				"_ArrayType_": "double",
+				"_ArraySize_": [0,0],
+				"_ArrayData_": null
+			},
+			{
+				"_ArrayType_": "double",
+				"_ArraySize_": [5,5],
+				"_ArrayData_": [1,0,0,0,0,0,1,0,0,0,0,0,1,0,0,0,0,0,1,0,0,0,0,0,1]
+			}
+		],
+		"edge": {
+			"_ArrayType_": "double",
+			"_ArraySize_": [8,4],
+			"_ArrayData_": [1,2,2,3,4,5,6,7,1,2,3,1,1,2,2,1,2,3,4,5,6,7,7,8,1,2,2,1,1,2,3,1]
+		}
+	},
+	"maxIter": {
+		"_ArrayType_": "double",
+		"_ArraySize_": [1,1],
+		"_ArrayData_": [5]
+	},
+	"res": {
+		"_ArrayType_": "double",
+		"_ArraySize_": [1,1],
+		"_ArrayData_": [3]
+	},
+	"target": [
+        "randIndex",
+		"randSimplex"
+	],
+	"nTrials": {
+		"_ArrayType_": "double",
+		"_ArraySize_": [1,1],
+		"_ArrayData_": [10]
+	},
+	"nSamples": {
+		"_ArrayType_": "double",
+		"_ArraySize_": [1,20],
+		"_ArrayData_": [10,23,54,127,297,695,1623,3792,8858,20691,48329,112883,263665,615848,1438449,3359818,7847599,18329807,42813323,99999999]
+	}
+}

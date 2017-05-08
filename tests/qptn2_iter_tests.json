@@ -1,0 +1,72 @@
+{
+	"QPTN": {
+		"arity": {
+			"_ArrayType_": "double",
+			"_ArraySize_": [1,3],
+			"_ArrayData_": [3,2,2]
+		},
+		"size": [
+			{
+				"_ArrayType_": "double",
+				"_ArraySize_": [1,3],
+				"_ArrayData_": [4,2,2]
+			},
+			{
+				"_ArrayType_": "double",
+				"_ArraySize_": [1,2],
+				"_ArrayData_": [4,3]
+			},
+			{
+				"_ArrayType_": "double",
+				"_ArraySize_": [1,2],
+				"_ArrayData_": [2,2]
+			}
+		],
+		"edge": {
+			"_ArrayType_": "double",
+			"_ArraySize_": [2,4],
+			"_ArrayData_": [1,1,1,2,2,3,1,1]
+		},
+		"stoch": [
+			{
+				"_ArrayType_": "double",
+				"_ArraySize_": [1,3],
+				"_ArrayData_": [1,2,3]
+			},
+			{
+				"_ArrayType_": "double",
+				"_ArraySize_": [1,1],
+				"_ArrayData_": [2]
+			},
+			{
+				"_ArrayType_": "double",
+				"_ArraySize_": [1,1],
+				"_ArrayData_": [2]
+			}
+		]
+	},
+	"nTrials": {
+		"_ArrayType_": "double",
+		"_ArraySize_": [1,1],
+		"_ArrayData_": [10]
+	},
+	"nSamples": {
+		"_ArrayType_": "double",
+		"_ArraySize_": [1,3],
+		"_ArrayData_": [1000,1000000,1000000000]
+	},
+	"maxIter": {
+		"_ArrayType_": "double",
+		"_ArraySize_": [1,1],
+		"_ArrayData_": [100]
+	},
+	"res": {
+		"_ArrayType_": "double",
+		"_ArraySize_": [1,1],
+		"_ArrayData_": [3]
+	},
+	"target": [
+		"randSimplex"
+	],
+    "testAlternatingIterationKL": true
+}
