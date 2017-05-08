@@ -50,7 +50,7 @@ External packages and code are included for convenience, as well to ensure versi
    
 * [flatten.m](https://www.mathworks.com/matlabcentral/fileexchange/27009-flatten-nested-cell-arrays?focused=6787739&tab=function)
 
-   Small routine to linearize a nested cell array, by Manu Raghavan, redistributed under the following [license](https://www.mathworks.com/matlabcentral/fileexchange/27009-flatten-nested-cell-arrays?focused=6787739&tab=function#license_modal)
+   Small routine to linearize a nested cell array, by Manu Raghavan, redistributed under the following [license](https://www.mathworks.com/matlabcentral/fileexchange/27009-flatten-nested-cell-arrays?focused=6787739&tab=function#license_modal).
    
 * [bplot.m](https://github.com/erikrtn/dataviz/blob/master/bplot.m)
 
