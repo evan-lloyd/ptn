@@ -8,12 +8,12 @@ function [] = chapter_4_figures()
     figHeight = 14;
 
     disp('Generating plots for QPTN1 tests...');
-%     qptn1SampleMeanPlots = PTN.test.plot_ptn_learn_sample_accuracy_mean('qptn1_sample_results.json', 'QPTN 1', [1e-8-eps, 1]);
-%     for i=1:numel(qptn1SampleMeanPlots)
-%         qptn1SampleMeanPlots{i}.Units = 'centimeters';
-%         qptn1SampleMeanPlots{i}.Position = [0 0 figWidth figHeight];
-%         print(qptn1SampleMeanPlots{i}, sprintf('qptn1_sample_mean_plot_%d.eps', i), '-depsc');
-%     end
+     qptn1SampleMeanPlots = PTN.test.plot_ptn_learn_sample_accuracy_mean('qptn1_sample_results.json', 'QPTN 1', [1e-8-eps, 1]);
+     for i=1:numel(qptn1SampleMeanPlots)
+         qptn1SampleMeanPlots{i}.Units = 'centimeters';
+         qptn1SampleMeanPlots{i}.Position = [0 0 figWidth figHeight];
+         print(qptn1SampleMeanPlots{i}, sprintf('qptn1_sample_mean_plot_%d.eps', i), '-depsc');
+     end
 
     disp('Generating plots for QPTN2 tests...');
 %     qptn2SampleMeanPlot = PTN.test.plot_ptn_learn_sample_accuracy_mean_alltargets('qptn2_sample_results.json', 'QPTN 2', [1e-8-eps, 1]);
