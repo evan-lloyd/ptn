@@ -172,7 +172,7 @@ function [ ] = test_ptn_learn(testDescriptionPath, outputPath, resume, parallel)
     % Run tests
     lastRes = 0;
     while curTrial <= size(trialDesc, 1)
-        fprintf('Begin trial %d of %d (%d, %d, %d, %d, %d)...\n', curTrial, size(trialDesc, 1), trialDesc(curTrial,1), trialDesc(curTrial,2), trialDesc(curTrial,3), trialDesc(curTrial, 4), trialDesc(curTrial, 5));
+        fprintf('Begin trial %d of %d (%d, %d, %d, %d)...\n', curTrial, size(trialDesc, 1), trialDesc(curTrial,1), trialDesc(curTrial,2), trialDesc(curTrial,3), trialDesc(curTrial, 4));
         res = trialDesc(curTrial, 1);
         targetGen = targetTypes{trialDesc(curTrial, 2)};
         sampleCount = trialDesc(curTrial, 3);
@@ -197,15 +197,20 @@ function [ ] = test_ptn_learn(testDescriptionPath, outputPath, resume, parallel)
             gen = testDesc.targets.(targetGen){find(testDesc.desc.res == res)}{trialOffset};
             target = gen.dist;
             params = gen.theta;
-            samples = gen.samples{find(testDesc.desc.nSamples == sampleCount)};
+            samples = gen.samples;
         else
             gen = testDesc.targets.(targetGen){trialOffset};
             target = gen.dist;
             params = gen.theta;
-            samples = gen.samples{find(testDesc.desc.nSamples == sampleCount)};
+            samples = gen.samples;
         end
-        
+        testD
+        % Quantize sample distribution to the given resolution for a more
+        % fair comparison with our method
         sampleDist = reshape((samples + 1) / (sampleCount + numel(target)), size(target));
+        sampleRes = res^numel(samples);
+        sampleDist = max(round(sampleDist * sampleRes), 1) / sampleRes;
+        sampleDist = sampleDist / sum(sampleDist(:));
         
         if testAlternatingIterationKL
             [predictiveDist, parameterEstimates, deltaKL, thetaHist, iterKL, iterParmKL] = PTN.learnPTN_iterKL(Q, samples, parallelBlockSize, maxIter, target, params);
@@ -218,17 +223,14 @@ function [ ] = test_ptn_learn(testDescriptionPath, outputPath, resume, parallel)
         
         outStats.KL = PTN.KL(predictiveDist(:)', target(:)');
         outStats.sampleKL = PTN.KL(sampleDist(:)', target(:)');
+        outStats.targetDistribution = target;
+        outStats.targetParameters = params;
         outStats.predictiveDist = predictiveDist;
         outStats.parameterEstimates = parameterEstimates;
         outStats.parameterKL = zeros(1, Q.nQPS);
+        outStats.samples = samples;
         outStats.deltaKL = deltaKL;
         outStats.thetaHist = thetaHist;
-        
-        outStats.res = res;
-        outStats.targetGen = targetGen;
-        outStats.sampleCount = sampleCount;
-        outStats.maxIter = maxIter;
-        outStats.trialOffset = trialOffset;
         
         if testAlternatingIterationKL
             outStats.iterKL = iterKL;

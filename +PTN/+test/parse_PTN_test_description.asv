@@ -11,5 +11,5 @@ function [ trialDesc ] = parse_PTN_test_description( testDesc )
                        testDesc.res ...
                        );
     trialDesc = cell2mat(cellfun(@(x) x(:), fliplr(desc), 'UniformOutput', false));
-    trialDesc = [trialDesc(repmat(1:size(trialDesc,1), testDesc.nTrials, 1),:) repmat((1:testDesc.nTrials)', size(trialDesc,1), 1)];
+    trialDesc = [trialDesc(repmat(1:size(trialDesc,1), testDesc.nTrials, 1),:) repmat((1:testDesc.nTrials)', size(trialDesc,1);
 end
